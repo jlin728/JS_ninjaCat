@@ -1,0 +1,27 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',
+    sans-serif;
+    outline: 1px solid fuchsia;
+}
+
+#wrapper{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 182px;
+    height: auto;
+    /* background-color: rgb(232, 232, 241); */
+    border: 2px solid black;
+    padding: 25px;
+    text-align: center;
+}
+/* h1{
+    padding: 25px;
+} */
+/* #main_image{
+    position: absolute;
+    margin: 50px 150px;
+ */
+}

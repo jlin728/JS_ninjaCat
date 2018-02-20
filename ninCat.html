@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Cat</title>
+    <link rel="stylesheet" type="text/css" href="ninCat_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+        
+            $('img').click(
+            function () {
+                $(this).stop().fadeOut(function () {
+                    var $temp = $(this).attr('src');
+                    $(this).attr('src', $(this).attr('alt-src'));
+                    $(this).attr('alt-src', $temp);
+                });
+
+                $(this).fadeIn();
+            },
+
+            function () {
+                $(this).stop().fadeOut(function () {
+                    var $temp = $(this).attr('alt-src');
+                    $(this).attr('alt-src', $(this).attr('src'));
+                    $(this).attr('src', $temp);
+            });
+
+            $(this).fadeIn();
+
+         });
+
+            // $("#img0").click(function(){
+            //     $(this).data("targetsrc", $(this).attr("src"));
+            //     $(this).attr("src", "ninja0.png");
+            //     });
+            
+            // $("#img1").click(function(){
+            //     $(this).attr("src", "ninja1.png");
+            //     });
+            
+            // $("#img2").click(function(){
+            //     $(this).attr("src", "ninja2.png");
+            //     });
+            
+            // $("#img3").click(function(){
+            //     $(this).attr("src", "ninja3.png");
+            //     });
+            
+            // $("#img4").click(function(){
+            //         $(this).attr("src", "ninja4.png");
+            //     });
+            
+            
+
+        });
+    </script>
+
+
+</head>
+
+<div id="wrapper">
+    <body>
+        <H1>Ninja Cat</H1>
+        <!-- <div id="main_image"> -->
+            <img src="cat0.png" alt="Cat 00" alt-src="ninja0.png"><br>
+            <img src="cat1.png" alt="Cat 01" alt-src="ninja1.png"><br>
+            <img src="cat2.png" alt="Cat 02" alt-src="ninja2.png"><br>
+            <img src="cat3.png" alt="Cat 03" alt-src="ninja3.png"><br>
+            <img src="cat4.png" alt="Cat 04" alt-src="ninja4.png"><br>
+        <!-- </div> -->
+    </body>
+</div>
+
+
+
+
+</html>
